@@ -2,7 +2,7 @@
 
 This repo contains the current implementation of the CASMOPOLITAN algorithm. 
 
-Link to paper: ```https://arxiv.org/abs/2102.07188```
+[Link to paper](https://arxiv.org/abs/2102.07188)
 
 If you find our paper or this repo to be useful for your research, please consider citing:
 ```
