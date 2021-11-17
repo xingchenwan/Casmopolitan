@@ -77,7 +77,13 @@ class MixedOptimizer(Optimizer):
             X_tr_torch = torch.tensor(self.best_X_each_restart, dtype=torch.float32).reshape(-1, self.true_dim)
             fX_tr_torch = torch.tensor(self.best_fX_each_restart, dtype=torch.float32).view(-1)
             # Train the auxiliary
-            self.auxiliary_gp = train_gp(X_tr_torch, fX_tr_torch, False, 300, )
+            self.auxiliary_gp = train_gp(X_tr_torch, fX_tr_torch, False, 300,
+                                         cat_dims=self.d_cat,
+                                         cont_dims=self.d_cont,
+                                         kern='mixed',
+                                         noise_variance=self.kwargs[
+                                             'noise_variance'] if 'noise_variance' in self.kwargs else None
+                                         )
             # Generate random points in a Thompson-style sampling
             X_init = latin_hypercube(self.casmopolitan.n_cand, self.dim)
             X_init = from_unit_cube(X_init, self.lb, self.ub)

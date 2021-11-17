@@ -176,7 +176,7 @@ class CASMOPOLITANMixed(CASMOPOLITANCat):
                 X = X.reshape(1, -1)
             gauss = Normal(torch.zeros(1), torch.ones(1))
             # flip for minimization problems
-            with torch.no_grad(), gpytorch.settings.max_cholesky_size(self.max_cholesky_size), \
+            with gpytorch.settings.max_cholesky_size(self.max_cholesky_size), \
                     gpytorch.settings.fast_pred_var():
                 preds = gp(X)
                 mean, std = -preds.mean, preds.stddev
@@ -201,7 +201,7 @@ class CASMOPOLITANMixed(CASMOPOLITANCat):
             # Invoked when you supply X in one-hot representations
             # if X.shape[1] == self.dim and self.dim != self.true_dim:
             #     X = onehot2ordinal(X, self.cat_dims)
-            with torch.no_grad(), gpytorch.settings.max_cholesky_size(self.max_cholesky_size), \
+            with gpytorch.settings.max_cholesky_size(self.max_cholesky_size), \
                     gpytorch.settings.fast_pred_var():
                 preds = gp.likelihood(gp(X))
             mean, std = preds.mean, preds.stddev
