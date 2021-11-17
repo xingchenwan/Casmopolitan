@@ -2,7 +2,7 @@
 
 This repo contains the current implementation of the CASMOPOLITAN algorithm. 
 
-Link to paper: ```https://arxiv.org/abs/2102.07188```
+[Link to paper](https://arxiv.org/abs/2102.07188)
 
 If you find our paper or this repo to be useful for your research, please consider citing:
 ```
@@ -53,3 +53,4 @@ This code repository uses materials from the following public repositories. The 
 3. COMBO: Oh, C., Tomczak, J. M., Gavves, E., & Welling, M. (2019). Combinatorial Bayesian Optimization using the Graph Cartesian Product. Advances in Neural Information Processing Systems, 32 (NeurIPS).
 Code repo: https://github.com/QUVA-Lab/COMBO
 4. Starting kit for NeurIPS 2020 Black-Box Optimisation Challenge. Code repo: https://github.com/rdturnermtl/bbo_challenge_starter_kit
+5. Bliek, L., Guijt, A., Verwer, S., & de Weerdt, M. (2020). Black-box mixed-variable optimisation using a surrogate model that satisfies integer constraints. arXiv preprint arXiv:2006.04508. Code repo: https://github.com/lbliek/MVRSM
