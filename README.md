@@ -46,7 +46,7 @@ where ```-p``` specifies the problem, ```-n``` specifies the number of trust reg
 Added the adversarial attack example (see details in the paper. The code is adapted from https://github.com/rubinxin/BayesOpt_Attack).
 
 1. To run the experiment, first download the ```cifar-10-batches-bin``` data and place them under ```mixed_test_func/AdvAttack/tf_models/cifar-10-batches-bin```
-2. Use ```run_adversarial_attack.py``` as the main script to run attack using Casmpopolitan.
+2. Use ```run_adversarial_attack.py``` as the main script to run attack using Casmpolitan.
 
 # Acknowledgements
 
