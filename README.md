@@ -41,6 +41,12 @@ where ```-p``` specifies the problem, ```-n``` specifies the number of trust reg
    in ```./mixed_test_func```).
 2. Edit the appropriate imports and other specifications and run from ```main.py``` as usual.    
 
+### Update on 11 April 2022
+
+Added the adversarial attack example (see details in the paper. The code is adapted from https://github.com/rubinxin/BayesOpt_Attack).
+
+1. To run the experiment, first download the ```cifar-10-batches-bin``` data and place them under ```mixed_test_func/AdvAttack/tf_models/cifar-10-batches-bin```
+2. Use ```run_adversarial_attack.py``` as the main script to run attack using Casmpopolitan.
 
 # Acknowledgements
 
@@ -54,3 +60,4 @@ This code repository uses materials from the following public repositories. The 
 Code repo: https://github.com/QUVA-Lab/COMBO
 4. Starting kit for NeurIPS 2020 Black-Box Optimisation Challenge. Code repo: https://github.com/rdturnermtl/bbo_challenge_starter_kit
 5. Bliek, L., Guijt, A., Verwer, S., & de Weerdt, M. (2020). Black-box mixed-variable optimisation using a surrogate model that satisfies integer constraints. arXiv preprint arXiv:2006.04508. Code repo: https://github.com/lbliek/MVRSM
+6. BayesOpt Adversarial Attack: https://github.com/rubinxin/BayesOpt_Attack
