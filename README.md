@@ -1,4 +1,4 @@
-## Code for 'Think Glocal and Act Local: Bayesian Optimisation for Categorical and Mixed Search Spaces'
+## Code for 'Think Global and Act Local: Bayesian Optimisation for Categorical and Mixed Search Spaces'
 
 This repo contains the current implementation of the CASMOPOLITAN algorithm. 
 
