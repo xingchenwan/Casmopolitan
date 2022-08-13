@@ -1,4 +1,4 @@
-## Code for 'Think Global and Act Local: Bayesian Optimisation for Categorical and Mixed Search Spaces'
+# Code for 'Think Global and Act Local: Bayesian Optimisation for Categorical and Mixed Search Spaces'
 
 This repo contains the current implementation of the CASMOPOLITAN algorithm. 
 
@@ -13,6 +13,11 @@ If you find our paper or this repo to be useful for your research, please consid
   year={2021}
 }
 ```
+
+## Update 14 Aug 2022
+If you are interested in Bayesian optimization in discrete and/or mixed search spaces, we have a new work tackling this problem using probabilistic reparameterisation of the acquisition functions, allowing continuous optimization to be used even when the input space is discrete. Please check it out the paper [here](https://realworldml.github.io/files/cr/paper22.pdf) and code [here](https://github.com/facebookresearch/bo_pr)!
+
+
 
 # Dependencies
 ```
