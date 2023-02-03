@@ -14,8 +14,8 @@ If you find our paper or this repo to be useful for your research, please consid
 }
 ```
 
-## Update 14 Aug 2022
-If you are interested in Bayesian optimization in discrete and/or mixed search spaces, we have a new work tackling this problem using probabilistic reparameterisation of the acquisition functions, allowing continuous optimization to be used even when the input space is discrete. Please check out the paper [here](https://realworldml.github.io/files/cr/paper22.pdf) and code [here](https://github.com/facebookresearch/bo_pr)!
+## Bayesian Optimization over Discrete and Mixed Spaces via Probabilistic Reparameterization 
+If you are interested in Bayesian optimization in discrete and/or mixed search spaces, we have a new work tackling this problem using probabilistic reparameterisation of the acquisition functions, allowing continuous optimization to be used even when the input space is discrete. Please check out the paper accepted at NeurIPS 2022 [here](https://openreview.net/forum?id=WV1ZXTH0OIn) and code [here](https://github.com/facebookresearch/bo_pr)!
 
 
 
